@@ -1,142 +1,69 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta name="facebook-domain-verification" content="34f5gz9onqzhb3p2afq4ayic9ndklx" />
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Promo Spesial - Daftar Sekarang</title>
+<title>Daftar - V4 Final Fix</title>
 <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'PIXEL_JS_URL_PLACEHOLDER');
-fbq('init', '1883673222642045');
-fbq('track', 'PageView');
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.face'+'book.net/en_US/fbevents.js');
+fbq('init','1883673222642045');fbq('track','PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none" src="PIXEL_IMG_URL_PLACEHOLDER" /></noscript>
+<noscript><img height="1" width="1" style="display:none" src="https://www.face"+"book.com/tr?id=1883673222642045&ev=PageView&noscript=1" /></noscript>
 <style>
-:root{--ink:#0e1530;--ink2:#18214a;--line:rgba(255,255,255,.2);--txt:#f4f6ff;--mute:rgba(244,246,255,.74);--blue:#3d7bff;--cyan:#35d6e8;--amber:#ffc857}
-*{box-sizing:border-box}html,body{margin:0}
-body{font-family:"Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;color:var(--txt);background:radial-gradient(120% 90% at 20% 0%,var(--ink2),var(--ink) 60%);min-height:100vh;overflow-x:hidden}
-.wrap{position:relative;max-width:520px;margin:0 auto;padding:40px 20px 56px;min-height:100vh;display:grid;align-items:center}
-.card{position:relative;border-radius:24px;border:1px solid var(--line);padding:28px 24px;background:linear-gradient(160deg,rgba(255,255,255,.16),rgba(255,255,255,.05)),var(--ink2);box-shadow:0 30px 60px rgba(0,0,0,.4)}
-.field{position:relative;margin-bottom:16px}
-.field input{width:100%;padding:22px 14px 8px;font-size:16px;color:var(--txt);background:rgba(255,255,255,.08);border:1px solid var(--line);border-radius:12px;outline:0}
-.field label{position:absolute;left:15px;top:16px;font-size:16px;color:var(--mute);pointer-events:none;transition:.2s;transform-origin:left top}
-.field input:focus+label,.field input:not(:placeholder-shown)+label{transform:translateY(-10px);font-size:12px;color:var(--cyan)}
-.btn{width:100%;margin-top:6px;padding:16px;border:0;border-radius:14px;font:inherit;font-size:17px;font-weight:800;color:#06122e;cursor:pointer;background:linear-gradient(180deg,var(--cyan),var(--blue));box-shadow:0 7px 0 #1c4fc2}
-.btn:disabled{opacity:.6}
-.msg{display:block;font-size:13px;color:var(--amber);margin:6px 2px 0;min-height:18px}
+:root{--ink:#0e1530;--ink2:#18214a;--line:rgba(255,255,255,.2);--txt:#f4f6ff;--mute:rgba(244,246,255,.74);--blue:#3d7bff;--cyan:#35d6e8}
+*{box-sizing:border-box}html,body{margin:0}body{font-family:system-ui,sans-serif;color:var(--txt);background:radial-gradient(120% 90% at 20% 0%,var(--ink2),var(--ink) 60%);min-height:100vh;display:grid;place-items:center;padding:20px}
+.card{width:100%;max-width:480px;border-radius:24px;border:1px solid var(--line);padding:28px 24px;background:linear-gradient(160deg,rgba(255,255,255,.16),rgba(255,255,255,.05)),var(--ink2)}
+input{width:100%;padding:18px 14px;margin-bottom:14px;font-size:16px;color:var(--txt);background:rgba(255,255,255,.08);border:1px solid var(--line);border-radius:12px;outline:0}
+.btn{width:100%;padding:16px;border:0;border-radius:14px;font-size:17px;font-weight:800;color:#06122e;cursor:pointer;background:linear-gradient(180deg,var(--cyan),var(--blue))}
 </style>
 </head>
 <body>
-<main class="wrap">
-  <div class="card">
-    <h2>Daftar sekarang</h2>
-    <p style="color:var(--mute);font-size:14px;margin:0 0 20px">Isi data singkat di bawah ini.</p>
-    <!-- FIX: action="javascript:void(0)" method="POST" + onsubmit="return false;" = ANTI-GET 100% -->
-    <form id="leadForm" action="javascript:void(0);" method="POST" onsubmit="return false;" novalidate>
-      <input type="text" style="display:none;" name="aG9uZXlwb3Q" value="" tabindex="-1" autocomplete="off" />
-      <div class="field">
-        <input type="text" id="Last_Name" name="Last Name" maxlength="80" placeholder=" " autocomplete="name" required />
-        <label for="Last_Name">Nama lengkap</label>
-        <span class="msg"></span>
-      </div>
-      <div class="field">
-        <input type="tel" id="Phone" name="Phone" maxlength="30" placeholder=" " autocomplete="tel" inputmode="tel" required />
-        <label for="Phone">No. HP / WhatsApp</label>
-        <span class="msg"></span>
-      </div>
-      <div class="field">
-        <input type="email" id="Email" name="Email" maxlength="100" placeholder=" " autocomplete="email" />
-        <label for="Email">Email (opsional)</label>
-        <span class="msg"></span>
-      </div>
-      <div class="field">
-        <input type="text" id="Company" name="Company" maxlength="100" placeholder=" " autocomplete="organization" />
-        <label for="Company">Nama usaha atau instansi (opsional)</label>
-        <span class="msg"></span>
-      </div>
-      <button type="submit" class="btn" id="formsubmit">SUBMIT</button>
-      <p style="margin:14px 0 0;font-size:12.5px;color:var(--mute)">Dengan mengirim data, kamu setuju dihubungi lewat WhatsApp atau email.</p>
-    </form>
-  </div>
-</main>
+<div class="card">
+<h2>Daftar sekarang - V4 FINAL</h2>
+<p style="color:var(--mute);font-size:13px">URL Baru: AKfycbyyEXiwJiaO... - Anti GET - Thanks pakai terima-kasih_2.html</p>
+<div id="box">
+<input type="text" id="Last_Name" placeholder="Nama lengkap" />
+<input type="tel" id="Phone" placeholder="No. HP / WhatsApp" />
+<input type="email" id="Email" placeholder="Email (opsional)" />
+<input type="text" id="Company" placeholder="Nama usaha (opsional)" />
+<button type="button" class="btn" id="formsubmit">SUBMIT</button>
+<p style="font-size:11px;color:var(--mute);margin-top:10px" id="status">Ready - V4 URL Baru</p>
+</div>
+</div>
 <script>
 (function(){
-  var CFG={
-    WEBAPP_URL:'https://script.google.com/macros/s/AKfycbyyEXiwJiaOVPOLetPHUaeP_dnGl9t9Lz009SijiUhv_R21ijnVZluBfCA__C7iKdhS/exec',
-    THANKS_URL:'thanks.html',
-    DEBUG:true
-  };
-  function log(){ if(CFG.DEBUG&&console) console.log.apply(console, ['[FIXED]'].concat([].slice.call(arguments))); }
-  function newEventId(){
-    var rnd=(crypto&&crypto.randomUUID)?crypto.randomUUID():'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g,function(c){var r=Math.random()*16|0;return(c=='x'?r:(r&3|8)).toString(16);});
-    return 'lead_'+Date.now()+'_'+rnd;
-  }
-  function getCookie(n){ var m=document.cookie.match(new RegExp('(?:^|; )'+n+'=([^;]*)')); return m?decodeURIComponent(m[1]):''; }
-  var qs=new URLSearchParams(location.search);
-  ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid'].forEach(function(k){var v=qs.get(k); if(v){try{sessionStorage.setItem(k,v);}catch(_){}}});
-  function getParam(k){ try{return sessionStorage.getItem(k)||qs.get(k)||'';}catch(_){return qs.get(k)||'';} }
-
-  var f=document.getElementById('leadForm');
-  var btn=document.getElementById('formsubmit');
-  if(!f||!btn){ console.error('Form not found'); return; }
-
-  function sendLead(){
-    if(f.elements['aG9uZXlwb3Q'].value){ log('Bot detected'); return false; }
-    var name=f.elements['Last Name'].value.trim();
-    var digits=f.elements['Phone'].value.replace(/\D/g,'');
-    var mail=f.elements['Email'].value.trim();
-    if(!name){ alert('Isi nama lengkap'); return false; }
-    if(digits.length<9||digits.length>15){ alert('No HP tidak valid'); return false; }
-    if(mail&&!/^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/.test(mail)){ alert('Format email salah'); return false; }
-    if(!f.elements['Company'].value.trim()){ f.elements['Company'].value='Pribadi'; }
-
-    btn.disabled=true; btn.textContent='Mengirim...';
-    var eventId=newEventId();
-    var fbclid=getParam('fbclid');
-    var fbc=getCookie('_fbc')||(fbclid?('fb.1.'+Date.now()+'.'+fbclid):'');
-
-    var payload={
-      event_name:'Lead',
-      event_id:eventId,
-      event_time:Math.floor(Date.now()/1000),
-      event_source_url:location.href,
-      user_agent:navigator.userAgent,
-      fbp:getCookie('_fbp'),
-      fbc:fbc,
-      nama:name,
-      phone:f.elements['Phone'].value.trim(),
-      email:mail,
-      company:f.elements['Company'].value.trim(),
-      utm_source:getParam('utm_source'),
-      utm_medium:getParam('utm_medium'),
-      utm_campaign:getParam('utm_campaign'),
-      utm_content:getParam('utm_content'),
-      utm_term:getParam('utm_term')
-    };
-
-    if(window.fbq){ fbq('track','Lead',{},{eventID:eventId}); log('Pixel Lead terkirim',eventId); }
-    log('Payload ke Sheet:',payload);
-
-    var done=false;
-    function go(){ if(done) return; done=true; location.href=CFG.THANKS_URL+'?eid='+encodeURIComponent(eventId); }
-    try{
-      fetch(CFG.WEBAPP_URL,{method:'POST',mode:'no-cors',keepalive:true,headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload)}).then(go,go);
-      setTimeout(go,1500);
-    }catch(e){ log('Fetch error',e); go(); }
-    return false;
-  }
-
-  // Attach dengan 2 cara biar pasti ke-block GET-nya
-  f.addEventListener('submit', function(e){ e.preventDefault(); e.stopPropagation(); sendLead(); return false; });
-  btn.addEventListener('click', function(e){ e.preventDefault(); e.stopPropagation(); sendLead(); return false; });
-  log('Form handler terpasang - ANTI-GET aktif');
+var CFG={
+WEBAPP_URL:'https://script.google.com/macros/s/AKfycbyyEXiwJiaOVPOLetPHUaeP_dnGl9t9Lz009SijiUhv_R21ijnVZluBfCA__C7iKdhS/exec',
+THANKS_URL:'terima-kasih_2.html',
+DEBUG:true
+};
+function log(){if(CFG.DEBUG&&console)console.log.apply(console,arguments);}
+function newId(){var r=(crypto&&crypto.randomUUID)?crypto.randomUUID():'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g,function(c){var v=Math.random()*16|0;return(c=='x'?v:(v&3|8)).toString(16);});return 'lead_'+Date.now()+'_'+r;}
+function getCookie(n){var m=document.cookie.match(new RegExp('(?:^|; )'+n+'=([^;]*)'));return m?decodeURIComponent(m[1]):'';}
+var qs=new URLSearchParams(location.search);function getP(k){try{return sessionStorage.getItem(k)||qs.get(k)||'';}catch(_){return qs.get(k)||'';}}
+['utm_source','fbclid'].forEach(function(k){var v=qs.get(k);if(v){try{sessionStorage.setItem(k,v);}catch(_){}}});
+var btn=document.getElementById('formsubmit');
+var st=document.getElementById('status');
+btn.addEventListener('click',function(){
+var name=document.getElementById('Last_Name').value.trim();
+var phone=document.getElementById('Phone').value.trim();
+var email=document.getElementById('Email').value.trim();
+var comp=document.getElementById('Company').value.trim()||'Pribadi';
+if(!name){alert('Isi nama');return;}
+if(phone.replace(/\D/g,'').length<9){alert('HP tidak valid');return;}
+btn.disabled=true; btn.textContent='Mengirim...'; st.textContent='Mengirim Pixel + Sheet...';
+var eid=newId();
+var fbclid=getP('fbclid');
+var fbc=getCookie('_fbc')||(fbclid?('fb.1.'+Date.now()+'.'+fbclid):'');
+var payload={event_name:'Lead',event_id:eid,event_time:Math.floor(Date.now()/1000),event_source_url:location.href,user_agent:navigator.userAgent,fbp:getCookie('_fbp'),fbc:fbc,nama:name,phone:phone,email:email,company:comp,utm_source:getP('utm_source')};
+log('V4 Payload',payload);
+if(window.fbq){fbq('track','Lead',{},{eventID:eid}); log('V4 Pixel Lead',eid);}
+st.textContent='Pixel terkirim: '+eid+' - Kirim ke Sheet...';
+var done=false;function go(){if(done)return;done=true;st.textContent='Sukses! Redirect ke '+CFG.THANKS_URL; location.href=CFG.THANKS_URL+'?eid='+encodeURIComponent(eid);}
+fetch(CFG.WEBAPP_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload)}).then(function(){log('Fetch OK');go();},function(e){log('Fetch fail',e);go();});
+setTimeout(go,2000);
+});
+log('V4 Ready - URL Baru AKfycbyyEXiwJiaO... - No form tag - Anti GET');
 })();
 </script>
 </body>
